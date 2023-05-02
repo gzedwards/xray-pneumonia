@@ -23,6 +23,8 @@ Takes up physicians time
 
 ## Data
 
+The x-ray images used were from kaggle: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+
 The images that we will be using to build a deep neural network are x-rays from pediatric patients that are broken into two classes of positive and negative for pneumonia. The images are also split into three groups for training, validation, and testing. The training x-rays will be used to train the model, validation will be used to validate the model as it trains through epochs. Testing x-rays will be used to see how the DNN performs on new images to simulate a real world trial. 
 
 ![graph1](./images/Pneumonia-negative.png)
@@ -40,13 +42,8 @@ X-rays can be tricky to diagnose when not looking at something obvious like a br
 
 ## Methods
 
-We started by prepaering the data, making sure everything is either a float or integer, and that categorical data (like area code) are seperated into dummy columns. We then isolated our dependant (or target) variable, churn, and created train and testing dataset split to build and test our models and normalized our independent variables. We used confusion matrix, a mean cross validation (5 variable models), and returned the precision, recall, accuracy and F1-score for our models to see how they performed. 
-
-For our first model we tried building with simple linear regression. 
-
-We then tried build a decission tree and optimizing the tree. 
-
-We then used a K-Nearest Neighbor model, pipeline methods and ensemble methods such as bagging, random forests, grid searches, gradient boost, adaboost, and xgboost. 
+To start we checked the x-ray images, as well as the grouping. We found that the provided validation set had only 16 images, so the training set was split (70/30 training, validation respectively). This gave a large enough validation set to be useful. 
+Next the ImageDataGenerator was set for the training, validation and testing sets, and models were built using different layers, depth and levels of complexity to try and find a strong model. 
 
 
 ***
