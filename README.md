@@ -51,20 +51,11 @@ Next the ImageDataGenerator was set for the training, validation and testing set
 ## Results
 
 
-![graph3](./images/linear-model.png)
+![graph3](./images/model1-accuracy.png)
+![graph4](./images/model1-loss.png)
 ***
 
-For the linear regression model that we started with, we observed the following:
-
-Precision Score: 0.4706
-
-Recall Score: 0.1333
-
-Accuracy Score: 0.8537
-
-F1-Score: 0.2078
-
-Mean Cross Validation: 0.6547
+The first model is decently accurate but has high loss. It is a good starting point. 
 
 
 ***
