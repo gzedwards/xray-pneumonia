@@ -53,15 +53,34 @@ Next the ImageDataGenerator was set for the training, validation and testing set
 
 ![graph3](./images/model1-accuracy.png)
 ![graph4](./images/model1-loss.png)
-***
+Testing accuracy: 73.55%
+Testing loss:	  6.355
 
 The first model is decently accurate but has high loss. It is a good starting point. 
+***
 
+![graph5](./images/model3-accuracy.png)
+![graph6](./images/model3-loss.png)
+Testing accuracy: 76.44%
+Testing loss:	  7.760
 
+The next model saw an imporvment of the base in accuracy, but saw an increase in loss.
+***
+
+![graph7](./images/model5-accuracy.png)
+![graph8](./images/model5-loss.png)
+Testing accuracy: 88.62%
+Testing loss:	  0.4472
+
+The final model saw in significant increase in accuracy, while also having a low loss. 
+Overall this model has performed well, accurately predicting whether or not the patient has pneumonia 88.62% of the time, with low loss of 0.4472. This was by far the top performing model that we made. However we ran this final model on the focus of a stringer recall score which we got 79.91%, meaning about 80% of all pnumonia cases were detected 
 ***
 
 ## Conclusions
 
+This image categorization deep neural network model can be used to help diagnose cases of pneumonia, and can speed up diagnosing to reduce time spent by healthcare professionals, as well as help reduce incorrect diagnosis. In conjunction with more models and more complex models it could also be grown to potentially be used to diagnose a range of conditions within patients to help screen and find cases of ailments. Being able to diagnose cases of pneumonia can vastly increase the speed and accuracy of medical diagnosis in patience. Not only can the model reduce time spent by healthcare professionals, it can help get the proper medical care to patients earlier and help prevent more serious cases from developing. With an accuracy of 88% and a low loss score, we can feel very confident that we are getting the correct diagnosis.
+
+Potential issues with building our model is human error. There is likely a way to improve the model further as well as there being potential mistakes in the training and validation images. Diagnosis early pneumonia can be difficult for trained physicians. It also would have been ideal if the validation data came in a significant quantity and we didn’t have to take from the training images.
 
 ***
 
